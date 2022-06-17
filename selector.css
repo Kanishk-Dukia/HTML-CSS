@@ -1,0 +1,81 @@
+/* *{
+    background-color: cyan;
+} */
+
+body{
+    background-color: aliceblue;
+}
+
+button{
+    font-size: 30px;
+    background-color: lightblue;
+
+}
+
+h1,h2{
+    color: darkslateblue;
+}
+
+#gsearch{
+    background-color: darkblue; 
+    color: white;
+}
+
+/* class */
+.tag{
+    background-color: red;
+    color: white;  
+    font-size: 20px;
+}
+
+a{
+    color: red;
+    font-size: 20px;
+}
+
+input + button{
+    background-color: rgb(128, 0, 79);
+}
+
+
+/* direct chld */
+
+/* footer > a{
+    color: aqua;
+} */
+
+a[href*="google"]{
+    color: magenta;
+}
+
+
+button:hover{
+    background-color: magenta;
+}
+
+
+/* pseudo classes */
+.post:nth-of-type(3){
+    background-color: yellow;
+}
+
+/* pseudo elemnts */
+h2::first-letter{
+    font-size: 100px;
+}
+
+
+/* specificity order id>>class>>element */
+/* chrome dev tools */
+/* !important overides everything */
+
+
+/* inherited */
+
+body{
+    color: purple;
+}
+
+/* button{
+    color: inherit;
+} */

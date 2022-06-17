@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms demo</title>
+
+    <link rel="stylesheet" href="selector.css">
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <button>outside form button does nothing</button>
+    <hr>
+    <!-- C:/tacos?username=k -->
+    <form action="/tacos">
+        <p>
+            <label for="username">enter your username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">enter password</label>
+            <input id="password" type="password" placeholder="password">
+            <!-- for and is connect each other, type represent type of input,placeholder givens prewritten text in space given, name gives what value input takes in and written in form -->
+        </p>
+        <p>
+            <label for="color">select the color</label>
+            <input id="color" type="color" placeholder="colour">
+        </p>
+        <input type="file" placeholder="file">
+        <p>
+            <button type="button">submit</button>
+            <button>submit</button>
+        </p>
+
+        <input type="submit" value="click me">
+
+    </form>
+
+    <h2 class = "tag" >hijacking searches</h2> </h2>
+
+    <form action="https://www.google.com/search?">
+        <h3>googlesearch</h3>
+        <label for="googlesearch">gsearch</label>
+        <input type="text" name="q" id="googlesearch">
+        <button id="gsearch"> search google</button>
+
+    </form>
+    <form action="https://www.youtube.com/results?">
+        <h3>search youtube</h3>
+        <input type="text" name="search_query" id="">
+        <button>search youtube</button>
+    </form>
+
+    <form action="/birds">
+        <input type="checkbox" name="agree terms" id="agree" checked>
+        <label for="agree">i agree to terms and conditions</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="" value="xs">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="l">L:</label>
+            <input type="radio" name="size" id="l" value="l">
+        </p>
+
+        <p>
+            <label for="">please select a meal type</label>
+            <select name="meal" id="meal">
+                <option value="fish">fish</option>
+                <option value="vegetarian">vegetarian</option>
+                <option value="steak">steak</option>
+                <option value="indian">indian</option>
+                <option value="chinese">chinese</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">amount of cheese</label>
+
+            <input type="range" id="cheese" min="1" max="100" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="requests">any special request</label>
+            <textarea name="" id="requests" cols="30" rows="10" name="requests?" placeholder="::"></textarea>
+
+        </p>
+        <button>submit</button>
+
+        <h2>validation demo</h2>
+        <form action="dummy/" method="post">
+            <label for="first"></label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="11">
+            </p>
+
+
+            <p>
+                <input type="email" name="" id="" required>
+                <input type="url" name="" id="">
+            </p>
+            <button>submit</button>
+        </form>
+
+
+    </form>
+
+    <a href=".tag">ssss</a>
+
+
+
+
+
+
+</body>
+
+</html>
